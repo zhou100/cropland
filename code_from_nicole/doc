@@ -1,0 +1,3 @@
+- interpRaster.R is a function for converting from 5 arc minute resolution to 0.5-degree resolution
+- tif2Raster.R is a function for converting a tif file to an object of raster class
+- justin_global_grid.Rda is an R datafile containing lat-lon pairs at 0.5-degree resolution
