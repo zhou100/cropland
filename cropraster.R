@@ -67,3 +67,13 @@ unique(CropDissolvePSFour$POS)
 
 
 clip1 <- raster("clip_cropland.tif")
+
+
+
+library(polyclip)
+
+require(rgdal)
+# Read SHAPEFILE.shp from the current working directory (".")
+shape <- readOGR(dsn = ".", layer = "SHAPEFILE")
+
+diff_set = polyclip(A, B, op=c("minus")
